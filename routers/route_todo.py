@@ -5,7 +5,7 @@ from schemas import Todo, TodoBody, SuccessMeg
 from database import db_create_todo, db_get_todos, db_get_single__todo, db_update_todo, db_delete_todo
 from starlette.status import HTTP_201_CREATED
 from typing import List
-from fastapi_csrf_protect import CsrfProtecZ
+from fastapi_csrf_protect import CsrfProtect
 from auth_utils import AuthJwtCsrf
 
 router = APIRouter()
