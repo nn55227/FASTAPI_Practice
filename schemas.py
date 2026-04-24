@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from typing import Optional
 from decouple import config
+from pydantic_settings import BaseSettings
 
 CSRF_KEY = config("CSRF_KEY")
 
